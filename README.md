@@ -6,19 +6,19 @@ For this project, you will write a smart contract to create your own token on a 
 
 
 
-# RIDAM Token (RUK) README
+# ABHI Token (MUK) README
 
 
 
 ## Introduction
 
-Welcome to the RIDAM Token (RUK) repository! This repository contains the Solidity smart contract code for the RUK token, an ERC-20 compatible token designed for various purposes. RUK tokens can be used for transactions, rewards, and other activities within an ecosystem.
+Welcome to the ABHI Token (MUK) repository! This repository contains the Solidity smart contract code for the MUK token, an ERC-20 compatible token designed for various purposes. MUK tokens can be used for transactions, rewards, and other activities within an ecosystem.
 
-This README file provides an overview of the RUK token contract and includes instructions on how to deploy the contract to the local Hardhat test network using Remix Connect Localhost and how to interact with it using Remix with Hardhat provider.
+This README file provides an overview of the MUK token contract and includes instructions on how to deploy the contract to the local Hardhat test network using Remix Connect Localhost and how to interact with it using Remix with Hardhat provider.
 
 ## Contract Details
 
-The `Token.sol` file contains the source code for the RUK token contract. Here are the key details of the contract:
+The `Token.sol` file contains the source code for the MUK token contract. Here are the key details of the contract:
 
 - Token Name: ABHI Token
 - Token Symbol: MUK
@@ -65,12 +65,12 @@ burn: A public function to burn (remove from circulation) a specified amount of 
 
 ## Deployment on Local Hardhat Test Network using Remix Connect Localhost
 
-To deploy the RUK token contract to the local Hardhat test network using Remix Connect Localhost, follow these steps:
+To deploy the MUK token contract to the local Hardhat test network using Remix Connect Localhost, follow these steps:
 
 1. Clone the repository and install its dependencies:
 
 ```sh
-git clone https://github.com/RIDAMSINHA/INTERACTING-AND-DEPLOYING-ON-LOCAL-NETWORK.git
+
 cd INTERACTING-AND-DEPLOYING-ON-LOCAL-NETWORK
 npm install
 ```
@@ -113,7 +113,7 @@ npx hardhat node
 
 ## Interacting with the Contract using Remix with Hardhat Provider
 
-After deploying the RUK token contract to the local Hardhat test network, you can interact with the contract using Remix with Hardhat provider. Here are the steps to get started:
+After deploying the MUK token contract to the local Hardhat test network, you can interact with the contract using Remix with Hardhat provider. Here are the steps to get started:
 
 1. Open the [Remix](https://remix.ethereum.org/) online IDE in your browser.
 
@@ -128,7 +128,7 @@ After deploying the RUK token contract to the local Hardhat test network, you ca
 6. You can now interact with the RUK token contract through the provided functions.
 
    - Use the `balanceOf` function to check the token balance of a specific address.
-   - Use the `transfer` function to send RUK tokens from your address to another address.
+   - Use the `transfer` function to send MUK tokens from your address to another address.
    - Use the `mint` function (accessible only to the contract owner) to mint
 
  new RUK tokens.
@@ -150,6 +150,6 @@ https://www.linkedin.com/in/abhisek-bag-09865421b/
 
 ## License
 
-The RIDAM Token (RUK) contract is licensed under the MIT License. See the [`LICENSE`](LICENSE) file for more information.
+The ABHI Token (MUK) contract is licensed under the MIT License. See the [`LICENSE`](LICENSE) file for more information.
 The comment // SPDX-License-Identifier: MIT is a special comment that specifies the license under which the code is released. It uses the SPDX-License-Identifier format, which is a standard way of indicating the license for open-source software.
 
