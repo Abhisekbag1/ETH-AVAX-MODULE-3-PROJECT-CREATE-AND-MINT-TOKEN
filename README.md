@@ -1,4 +1,14 @@
+# ETH+AVAX PROOF:-Intermediate EVM MODULE 3 PROJECT
+
+# CREATE AND MINT TOKEN
+
+For this project, you will write a smart contract to create your own token on a local HardHat network. Once you have your contract, you should be able to use remix to interact with it. From remix, the contract owner should be able to mint tokens to a provided address. Any user should be able to burn and transfer tokens.
+
+
+
 # RIDAM Token (RUK) README
+
+
 
 ## Introduction
 
@@ -10,14 +20,48 @@ This README file provides an overview of the RUK token contract and includes ins
 
 The `Token.sol` file contains the source code for the RUK token contract. Here are the key details of the contract:
 
-- Token Name: RIDAM Token
-- Token Symbol: RUK
+- Token Name: ABHI Token
+- Token Symbol: MUK
 - Decimals: 18
 - Total Supply: 0 (initially)
 
 The contract includes standard ERC-20 functions such as `balanceOf` and `transfer`. It also includes functionalities for minting and burning tokens, accessible only by the contract owner.
 
 The contract owner has special privileges and is the only address allowed to mint new tokens. Other addresses can interact with the contract by transferring tokens and burning their own tokens.
+
+Contract Name: Token
+
+State Variables:
+
+name: A public string variable representing the name of the token ("ABHI Token").
+symbol: A public string variable representing the symbol of the token ("MUK").
+decimals: A public uint8 variable representing the number of decimal places for token balance representation (18 decimals).
+totalSupply: A public uint256 variable representing the total supply of tokens.
+balances: A private mapping that maps addresses to their corresponding token balances.
+allowances: A private mapping that maps addresses to allowances granted by token holders to spend tokens on their behalf.
+owner: A public address variable representing the owner of the token contract.
+Events:
+
+Transfer: An event emitted when tokens are transferred from one address to another.
+Mint: An event emitted when new tokens are minted and added to an address.
+Burn: An event emitted when tokens are burned (removed from circulation) from an address.
+Modifiers:
+
+onlyOwner: A modifier that restricts the execution of a function to the contract owner only.
+Constructor:
+
+The constructor is executed once during contract deployment. It initializes the state variables:
+name is set to "ABHI Token".
+symbol is set to "MUK".
+decimals is set to 18.
+totalSupply is set to 0.
+owner is set to the address of the contract deployer (msg.sender).
+Functions:
+
+balanceOf: A public view function that takes an address as an argument and returns the token balance of that address.
+transfer: A public function to transfer tokens from the caller's address to a recipient address.
+mint: A public function to mint new tokens and add them to a specified address. Only the contract owner can call this function.
+burn: A public function to burn (remove from circulation) a specified amount of tokens from the caller's address.
 
 ## Deployment on Local Hardhat Test Network using Remix Connect Localhost
 
@@ -100,16 +144,12 @@ After deploying the RUK token contract to the local Hardhat test network, you ca
 
 ## Authors
 
-RIDAM ADITYA SINHA
-
-https://www.linkedin.com/in/ridam-sinha-188133210/
-
-ridamsinha20@gmail.com
+ABHISEK BAG
+https://www.linkedin.com/in/abhisek-bag-09865421b/
+21BCS9333@cuchd.in
 
 ## License
 
 The RIDAM Token (RUK) contract is licensed under the MIT License. See the [`LICENSE`](LICENSE) file for more information.
+The comment // SPDX-License-Identifier: MIT is a special comment that specifies the license under which the code is released. It uses the SPDX-License-Identifier format, which is a standard way of indicating the license for open-source software.
 
-## Disclaimer
-
-Please note that this contract and the associated README file are provided for informational purposes only. Deploying and interacting with smart contracts involves risks, and it is your responsibility to review and understand the code before proceeding. Make sure to exercise caution and perform appropriate testing before deploying any smart contract on a live network.
