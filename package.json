@@ -1,34 +1,32 @@
 {
-  "name": "frontend",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "bootstrap": "^4.4.1",
-    "ethers": "^5.4.7",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "react-scripts": "5.0.1"
-  },
+  "name": "hardhat-boilerplate",
+  "version": "1.0.0",
+  "description": "A boilerplate repository to get you started with Hardhat and Ethereum development",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "eject": "react-scripts eject"
+    "test": "hardhat test"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NomicFoundation/hardhat-boilerplate.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "author": "Nomic Foundation",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NomicFoundation/hardhat-boilerplate/issues"
+  },
+  "homepage": "https://github.com/NomicFoundation/hardhat-boilerplate#readme",
+  "devDependencies": {
+    "@ethersproject/abi": "^5.7.0",
+    "@ethersproject/providers": "^5.7.2",
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.5",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.7",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "@nomiclabs/hardhat-ethers": "^2.2.1",
+    "@nomiclabs/hardhat-etherscan": "^3.1.4",
+    "chai": "^4.3.7",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.12.5",
+    "hardhat-gas-reporter": "^1.0.9",
+    "solidity-coverage": "^0.8.2"
   }
 }
